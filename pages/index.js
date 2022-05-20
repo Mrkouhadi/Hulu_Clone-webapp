@@ -1,8 +1,9 @@
 import Head from 'next/head'
+import Header from '../components/Header'
 
 export default function Home() {
   return (
-    <div className="bg-black h-screen">
+    <div className="h-screen">
       <Head>
         <title>Hulu Clone by Mr.kouhadi</title>
         <meta name="description" content="Hulu webapp clone built using Nextjs and Tailwindcss" />
@@ -11,10 +12,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="">
-        
-      </main>
-
+      {/* header */}
+      <Header/>
      
     </div>
   )
