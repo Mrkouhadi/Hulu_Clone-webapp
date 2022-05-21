@@ -5,7 +5,7 @@ import { HomeIcon, BadgeCheckIcon, CollectionIcon, LightningBoltIcon, SearchIcon
 import HeaderItem from './HeaderItem'
 
 const Header = () => {
-  return <header className='flex flex-col sm:flex-row m-5 items-center justify-between'>
+  return <header className='flex flex-col sm:flex-row m-5 items-center justify-between h-auto'>
             <div className='flex flex-grow justify-evenly max-w-2xl'>
                 <HeaderItem title="HOME" Icon={HomeIcon} />
                 <HeaderItem title="TRENDING" Icon={LightningBoltIcon} />
