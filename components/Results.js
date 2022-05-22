@@ -5,9 +5,11 @@ const Results = ({requests}) => {
 
   return (
     <div>
-        requests.map(req =>(
-            <Thumbnail />
-        ))
+        {
+            requests.map(res => (
+                <Thumbnail key={res.id} result={res} />
+            ))
+        }
     </div>
   )
 }
