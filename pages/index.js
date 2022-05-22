@@ -17,7 +17,7 @@ const Home =({movies})=> {
 
       <Header/>
       <Nav/>
-      <Results movies={movies}/>
+      <Results requests={movies}/>
     </div>
   )
 }
