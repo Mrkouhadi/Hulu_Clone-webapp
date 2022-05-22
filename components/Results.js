@@ -1,8 +1,11 @@
 import React from 'react'
 
-const Results = () => {
+const Results = ({movies}) => {
+    
   return (
-    <div>Results</div>
+    <div>
+        
+    </div>
   )
 }
 
