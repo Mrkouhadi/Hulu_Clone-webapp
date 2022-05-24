@@ -25,10 +25,9 @@ export default  Home;
 
 export const getServerSideProps = async(context) =>{
   const {genre} = context.query;
-  const request = await fetch(`https://api.themoviedb.org/3${requests[genre]?.url || requests.fetchTrending}`).then(
-    results => results.json()
-  );
-
+  const request = await fetch(`https://api.themoviedb.org/3${requests[genre]?.url || requests.fetchTrending.url}`).then(
+                                    (results) => results.json()
+                              );
   return {
     props:{
       movies:request.results
